@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <div className='absolute w-[100vw] flex top-0 justify-between p-[50px] z-30'>
         <div>
-          <h3 onClick={() => setContact(state => !state)} className='text-white w-[7ch] font-bold text-[50px]'>Contact</h3>
+          <h3 onClick={() => setContact(state => !state)} className='text-white w-[7ch] nav_c font-bold text-[50px]'>Contact</h3>
           <TrailL open={contact}>
             <Link href='/contact/WebDev' className='nav_c'>Web Developer</Link>
             <Link href='/contact/3dArtist' className='nav_c'>3d Artist</Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
         </div>
         <h3 className='text-white font-bold text-[50px]'><Link href='/' className=' nav_c'>000</Link></h3>
         <div className='text-right'>
-          <h3 onClick={() => setMore(state => !state)} className='text-white w-[7ch] font-bold text-[50px]'>More</h3>
+          <h3 onClick={() => setMore(state => !state)} className='text-white w-[7ch] nav_c font-bold text-[50px]'>More</h3>
           <TrailR open={more}>
             <Link href='/More/WebDev' className='nav_c'>Web Developer</Link>
             <Link href='/More/3dArtist' className='nav_c'>3d Artist</Link>
