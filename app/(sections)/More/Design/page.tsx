@@ -21,7 +21,7 @@ const DesignM = () => {
             <h2 className='text-[200px] w-[10ch] text-white'><b className='font-normal'>What makes you</b> buy.</h2>
            
         </section>
-        <section className='h-[100vh]'>
+        <section className='h-[100vh] flex item-center justify-center'>
             <div className='absolute blur-[200px] w-[633px] h-[633px] rounded-full bg-[#005AAD]'>
             </div>
         </section>

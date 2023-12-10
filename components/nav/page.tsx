@@ -59,7 +59,7 @@ export default function Navbar() {
             <Link href='/contact/Copywriting' className='nav_c'>Copywriter</Link>
           </TrailL>
         </div>
-        <h3 className='text-white font-bold text-[50px]'><Link href='/'>000</Link></h3>
+        <h3 className='text-white font-bold text-[50px]'><Link href='/' className=' nav_c'>000</Link></h3>
         <div className='text-right'>
           <h3 onClick={() => setMore(state => !state)} className='text-white w-[7ch] font-bold text-[50px]'>More</h3>
           <TrailR open={more}>
