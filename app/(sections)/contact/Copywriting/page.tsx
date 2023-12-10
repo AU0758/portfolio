@@ -1,8 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-
-import Cube from '@/assets/images/cube.png'
-import Spere from '@/assets/images/furr_spere.png'
 
 const CopywriterC = () => {
   return (

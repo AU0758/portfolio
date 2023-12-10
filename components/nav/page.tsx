@@ -5,7 +5,7 @@ import { useTrail, a } from '@react-spring/web';
 import Link from 'next/link';
 
 
-const TrailL: React.FC<{ open: boolean }> = ({ open, children }) => {
+const TrailL: React.FC<{ open: boolean, children:any }> = ({ open, children }) => {
   const items = React.Children.toArray(children)
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -24,7 +24,7 @@ const TrailL: React.FC<{ open: boolean }> = ({ open, children }) => {
     </div>
   )
 }
-const TrailR: React.FC<{ open: boolean }> = ({ open, children }) => {
+const TrailR: React.FC<{ open: boolean, children:any }> = ({ open, children }) => {
   const items = React.Children.toArray(children)
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -62,7 +62,7 @@ export default function Navbar() {
         <h3 className='text-white font-bold text-[50px]'><Link href='/'>000</Link></h3>
         <div className='text-right'>
           <h3 onClick={() => setMore(state => !state)} className='text-white w-[7ch] font-bold text-[50px]'>More</h3>
-          <TrailR open={more} className=''>
+          <TrailR open={more}>
             <Link href='/More/WebDev' className='nav_c'>Web Developer</Link>
             <Link href='/More/3dArtist' className='nav_c'>3d Artist</Link>
             <Link href='/More/Design' className='nav_c'>Designer</Link>
