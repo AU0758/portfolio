@@ -11,7 +11,7 @@ export default function App() {
   const [index, setIndex] = useState(3  );
 
   return (
-  <main className='flex h-[100vh] items-center justify-center  overflow-hidden'>
+  <main className='flex h-[100vh] items-center justify-center overflow-hidden'>
     {Array(
       <div className='webdev'>
           <p className='absolute webdev vertical-text orbitron top-0 left-[15ch] text-[20px] text-[#009317]'>0101010101001011001010</p>
@@ -54,12 +54,12 @@ export default function App() {
       <h2 className='sticky top-12'>The</h2>
       {Array(
       <h1 className='sm:text-[50px] md:text-[100px] lg:text-[300px] title'  onClick={(e) => {setIndex((index+1) % 5)}} >WEBDEV</h1>,
-      <h1 className='sm:text-[50px] md:text-[100px] z-50 lg:text-[300px] title' onClick={(e) => {setIndex((index+1) % 5)}} >3D ARTIST</h1>,
+      <h1 className='sm:text-[50px] md:text-[100px] lg:text-[300px] title' onClick={(e) => {setIndex((index+1) % 5)}} >3D ARTIST</h1>,
       <h1 className=' title' onClick={(e) => {setIndex((index+1) % 5)}} >DESIGNER</h1>,
       <h1 className='copywriter copywriter_title sm:text-[50px] md:text-[100px] lg:text-[262.5px] title' onClick={(e) => {setIndex((index+1) % 5)}} >COPYWRITER</h1>, 
-      <h1 className='cursor-pointer sm:text-[50px] md:text-[100px] lg:text-[300px] title'  onClick={(e) => {setIndex((index+1) % 5)}} >000</h1>)[index]}
+      <h1 className='sm:text-[50px] md:text-[100px] lg:text-[300px] title'  onClick={(e) => {setIndex((index+1) % 5)}} >000</h1>)[index]}
 
-      <h2 className='sticky'>You want</h2>
+      <h2 className='sticky bottom-12'>You want</h2>
     </div>
   </main>
   );

@@ -255,6 +255,10 @@ h1{
   cursor: url('../assets/cursor_click.svg'), pointer;	
 }
 
+.nav_c {
+  cursor: url('../assets/cursor_click.svg'), pointer;	
+}
+
 nav{
   color: var(--text-1);
   font-family: var(--font-1);
